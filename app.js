@@ -22,6 +22,8 @@ app.use(bodyParser.urlencoded({ extended: false }));
 app.use(cookieParser());
 app.use(require('less-middleware')(path.join(__dirname, 'public')));
 app.use(express.static(path.join(__dirname, 'public')));
+app.use('/styles', express.static(__dirname + '/node_modules/bootstrap/dist/css/'));
+app.use('/scripts', express.static(__dirname + '/node_modules/bootstrap/dist/js/'));
 app.set('view engine', 'mustache');
 app.engine('mustache', require('hogan-middleware').__express);
 
