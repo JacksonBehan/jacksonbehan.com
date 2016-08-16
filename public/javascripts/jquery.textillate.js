@@ -260,7 +260,7 @@
     minDisplayTime: 2000,
     initialDelay: 200,
     in: {
-      effect: 'flipInX',
+      effect: 'flipInY',
       delayScale: 2.0,
       delay: 50,
       sync: true,
