@@ -258,12 +258,12 @@
     selector: '.texts',
     loop: false,
     minDisplayTime: 2000,
-    initialDelay: 0,
+    initialDelay: 200,
     in: {
-      effect: 'fadeInLeftBig',
+      effect: 'flipInX',
       delayScale: 2.0,
       delay: 50,
-      sync: false,
+      sync: true,
       reverse: false,
       shuffle: false,
       callback: function () {}

@@ -1,3 +1,3 @@
 $(function () {
-    $('.tlt').textillate();
+    $('.headline').textillate();
 })
