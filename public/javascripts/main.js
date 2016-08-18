@@ -8,6 +8,15 @@ $( document ).ready(function() {
 
 $('.headline').textillate({ initialDelay: 200, in: { effect: 'flipInY' } });
 $('.subhead').textillate({ initialDelay: 800, in: { effect: 'flipInX' } });
+$('.nav-note').textillate({ initialDelay: 1100, in: { effect: 'rotateInDownRight' } });
+$('.tacky').textillate({ initialDelay: 2200, in: { effect: 'rollIn', sync: false, delay: 10 }, out: { effect: 'hinge', sync: true } });
+
+$('.tacky').on('inAnimationEnd.tlt', function () {
+  setTimeout(function() {
+    $('.tacky').textillate('out')
+  }, 1000)
+});
+
 
 $('#nav-button').click(function() {
   $('.headline').addClass('hidden');
