@@ -93,24 +93,26 @@ a {
   cursor: pointer;
 }
 
-.nav-note {
+.index-content {
   display: none;
-  @media (min-width: 768px) {
-    display: inline-block;
-    color: #fff;
-    float: right;
-    padding-top: 45px;
-    font-size: 18px;
+}
+
+.nav-note {
+  color: #fff;
+  float: right;
+  padding-top: 45px;
+  font-size: 18px;
+  @media (max-width: 767px) {
+    display: none !important;
   }
 }
 
 .tacky {
-  display: none;
-  @media (min-width: 768px) {
-    display: inline-block;
-    padding-top: 100px;
-    color: #fff;
-    font-size: 20px;
+  padding-top: 100px;
+  color: #fff;
+  font-size: 20px;
+  @media (max-width: 767px) {
+    display: none !important;
   }
   @media (min-width: 992px) {
     padding-top: 155px;

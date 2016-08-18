@@ -3,19 +3,23 @@ $( document ).ready(function() {
     var height = window.innerHeight;
     var navHeight = height - 50;
     navItemHeight = navHeight/4
-    // console.log(navItemHeight)
 });
 
-$('.headline').textillate({ initialDelay: 200, in: { effect: 'flipInY' } });
-$('.subhead').textillate({ initialDelay: 800, in: { effect: 'flipInX' } });
-$('.nav-note').textillate({ initialDelay: 1100, in: { effect: 'rotateInDownRight' } });
-$('.tacky').textillate({ initialDelay: 2800, in: { effect: 'rollIn', sync: false, delay: 10 }, out: { effect: 'hinge', sync: true } });
+window.onload = function() {
+  $('.index-content').css('display', 'inline-block')
+  $('.headline').textillate({ initialDelay: 200, in: { effect: 'flipInY' } });
+  $('.subhead').textillate({ initialDelay: 800, in: { effect: 'flipInX' } });
+  $('.nav-note').textillate({ initialDelay: 1100, in: { effect: 'rotateInDownRight' } });
+  $('.tacky').textillate({ initialDelay: 3000, in: { effect: 'rollIn', sync: false, delay: 10 }, out: { effect: 'hinge', sync: true } });
 
-$('.tacky').on('inAnimationEnd.tlt', function () {
-  setTimeout(function() {
-    $('.tacky').textillate('out')
-  }, 1800)
-});
+  $('.tacky').on('inAnimationEnd.tlt', function () {
+    setTimeout(function() {
+      $('.tacky').textillate('out')
+    }, 1900)
+  });
+}
+
+
 
 
 $('#nav-button').click(function() {
