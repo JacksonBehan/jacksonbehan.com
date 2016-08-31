@@ -9,8 +9,8 @@ window.onload = function() {
   $('.index-content').css('display', 'inline-block')
   $('.headline').textillate({ initialDelay: 200, in: { effect: 'flipInY' } });
   $('.subhead').textillate({ initialDelay: 800, in: { effect: 'flipInX' } });
-  $('.nav-note').textillate({ initialDelay: 1100, in: { effect: 'rotateInDownRight' } });
-  $('.tacky').textillate({ initialDelay: 3000, in: { effect: 'rollIn', sync: false, delay: 10 }, out: { effect: 'hinge', sync: true } });
+  $('.nav-note').textillate({ initialDelay: 1000, in: { effect: 'rotateInDownRight' } });
+  $('.tacky').textillate({ initialDelay: 2800, in: { effect: 'rollIn', sync: false, delay: 10 }, out: { effect: 'hinge', sync: true } });
 
   $('.tacky').on('inAnimationEnd.tlt', function () {
     setTimeout(function() {
@@ -18,9 +18,6 @@ window.onload = function() {
     }, 1900)
   });
 }
-
-
-
 
 $('#nav-button').click(function() {
   $('.headline').addClass('hidden');
