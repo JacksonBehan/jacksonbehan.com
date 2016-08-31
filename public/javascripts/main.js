@@ -10,7 +10,7 @@ window.onload = function() {
   $('.headline').textillate({ initialDelay: 200, in: { effect: 'flipInY' } });
   $('.subhead').textillate({ initialDelay: 800, in: { effect: 'flipInX' } });
   $('.nav-note').textillate({ initialDelay: 1000, in: { effect: 'rotateInDownRight' } });
-  $('.tacky').textillate({ initialDelay: 2800, in: { effect: 'rollIn', sync: false, delay: 10 }, out: { effect: 'hinge', sync: true } });
+  $('.tacky').textillate({ initialDelay: 2300, in: { effect: 'rollIn', sync: false, delay: 10 }, out: { effect: 'hinge', sync: true } });
 
   $('.tacky').on('inAnimationEnd.tlt', function () {
     setTimeout(function() {
