@@ -35,3 +35,31 @@ $('.fa-times').click(function() {
   $('#nav-button').removeClass('hidden');
   $('.navbar-nav li').css('height', 50)
 });
+
+
+var lastScrollTop = 0;
+$(window).scroll(function (event) {
+    var st = $(this).scrollTop();
+    if (st > lastScrollTop) {
+        $('.j').animate({top: '-=5', left: '-=5'}, 10);
+        $('.a').animate({top: '-=7', left: '-=4'}, 10);
+        $('.c').animate({top: '-=5', left: '-=5'}, 10);
+        $('.k').animate({top: '-=1', left: '-=8'}, 10);
+        $('.s').animate({top: '-=5', left: '-=5'}, 10);
+    } else if (st < lastScrollTop) {
+        $('.j').animate({top: '+=5', left: '=-10'}, 10);
+        $('.a').animate({top: '+=7', left: '=-8'}, 10);
+        $('.c').animate({top: '+=5', left: '=-5'}, 10);
+        $('.k').animate({top: '+=4', left: '=-4'}, 10);
+        $('.c').animate({top: '+=5', left: '=-5'}, 10);
+    }
+
+    if (st == 0) {
+      $('.j').animate({top: '-74px', left: '23px'}, 100);
+      $('.a').animate({top: '0', left: '194px'}, 100);
+      $('.c').animate({top: '200px', left: '464px'}, 100);
+      $('.k').animate({top: '350px', left: '769px'}, 100);
+      $('.s').animate({top: '515px', left: '1043px'}, 100);
+    }
+    lastScrollTop = st;
+});

@@ -14,5 +14,13 @@ router.get('/resume', function(req, res, next) {
   res.render('resume');
 });
 
+router.get('/play', function(req, res, next) {
+  res.render('play');
+});
+
+router.get('/scroll', function(req, res, next) {
+  res.render('scroll');
+});
+
 
 module.exports = router;
